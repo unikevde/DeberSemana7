@@ -33,9 +33,5 @@ public partial class ActualizarEliminar : ContentPage
          var parametros = new System.Collections.Specialized.NameValueCollection();
          cliente.UploadValues(url, "PUT", parametros);
          Navigation.PushAsync(new Views.Inicio(""));
-  
- 	string url = $"http://172.24.13.67/semana6/post.php";
-	var content = await cliente.PutAsync(url);
-        await Navigation.PushAsync(new Inicio());
     }
 }
